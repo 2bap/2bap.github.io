@@ -4,6 +4,7 @@ body {
     background-color: #000;
     font-family: "mc";
     color: #fff;
+    overflow: hidden;
 }
 
 .overlay {
@@ -24,8 +25,8 @@ body {
     border: none;
     font-family: 'monospace';
     font-size: 30px;
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(255, 0, 0), 0 0 30px rgb(255, 0, 0);
     position: fixed;
   }
   
@@ -55,6 +56,18 @@ body {
 
 @keyframes flash2 {
     0%, 100% {
+        color: rgb(255, 0, 0);
+    }
+    50% {
+        color: black;
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    }
+  }
+
+  @keyframes MemberFlash {
+    0%, 100% {
         color: rgb(255, 255, 255);
     }
     50% {
@@ -64,7 +77,6 @@ body {
       text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
     }
   }
-  
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -163,13 +175,13 @@ body {
         }
 
         .archive-box .OwnerItem1:hover {
-            box-shadow: 1px 8px 12px #ffffff6d;
+            box-shadow: 1px 8px 12px #ff00006d;
             transition:  box-shadow .35s ease-in;
             
         }
         
         .archive-box .OwnerItem2:hover {
-            box-shadow: 1px 8px 12px #ffffff6d;
+            box-shadow: 1px 8px 12px #ff00006d;
             transition:  box-shadow .35s ease-in;
         }
 
@@ -306,11 +318,19 @@ body {
         padding-bottom: 20px;
         
 }
-
-#Ownerheader {
-    color: rgb(255, 255, 255);
+#Owner {
+    color: rgb(255, 0, 0);
     font-family: mc;
-    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(255, 0, 0), 0 0 30px rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    animation: flash2 3s infinite alternate;
+}
+#Ownerheader {
+    color: rgb(255, 0, 0);
+    font-family: mc;
+    text-shadow: 0 0 10px rgb(255, 0, 0), 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255);
     font-size: 30px;
     text-align: center;
     padding-bottom: 20px;
@@ -324,7 +344,7 @@ body {
     font-size: 30px;
     text-align: center;
     padding-bottom: 20px;
-    animation: flash2 3s infinite alternate;
+    animation: MemberFlash 3s infinite alternate;
 }
 
 
