@@ -33,7 +33,7 @@
 			setTimeout(() => {
 				component.classList.remove("opacity-0");
 				component.classList.add("opacity-1");
-			}, 1); //1ms For fixing opacity on new element
+			}, 1);
 			setTimeout(() => {
 				component.classList.remove("opacity-1");
 				component.classList.add("opacity-0");
@@ -60,7 +60,6 @@
 		$(document).ready(function() {
 			var bg_video_mime = "image/gif";
 			if (!bg_video_mime == "video/mpeg" || !bg_video_mime == "video/mp4" || !bg_video_mime == "video/m4a") {
-				// remove bgv
 				$("#bgv").remove();
 			}
 

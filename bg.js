@@ -1,3 +1,5 @@
+// hello again. If you see this you might need to sleep soon. It might be your beddy time kiddo!
+
 var enterButton = document.getElementById("overlay");
 var mainContent = document.getElementById("mainContent");
 var audioPlayer = document.getElementById("audioPlayer");
