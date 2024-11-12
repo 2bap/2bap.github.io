@@ -32,9 +32,11 @@
 		</div>
 	
 		<div class="background"> <!-- background for the video to be on -->
-			<video loop preload id="vbg">
-				<source src="https://twerking.lol/files/Badass.mp4"> <!-- video element -->
-			</video>
+            <div>
+                <video loop id="vbg">
+                    <source src="https://twerking.lol/files/bg.mp4"> <!-- video element -->
+                </video>
+            </div>
 			<script>
 				var video = document.currentScript.parentElement;
 				video.volume = 0.2;
@@ -67,4 +69,4 @@
 			setInterval(changeTitle, 275);
 		</script>
 	</body>
-	
+</html>
