@@ -1,34 +1,34 @@
 <!-- © 2024 twerking.lol | All rights reserved. -->
 <!-- No obfuscation because theres no cap in my rap. -->
-<!-- phishthephiser is taking his first steps fr -sidthesciencejid -->
+<!-- all the comments are for people that are new to code or that dont understand some things. :3 -->
 
 <!DOCTYPE html>
 <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script> <!--actually decent anti devtool by someone else because im too lazy to remake it/make my own-->
 <html lang="en">
     <head>
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="twerking.lol">
-        <meta property="og:url" content="https://twerking.lol/">
-        <meta property="og:title" content="twerking.lol">
-        <meta property="og:description" content="owned by 1bop">
-        <meta content="https://twerking.lol/files/image.png" property="og:image">
-        <link rel="shortcut icon" href="https://twerking.lol/files/icon.ico" type="image/x-icon">
-        <link rel="icon" href="https://twerking.lol/files/icon.ico" type="image/x-icon">
-        <link rel="icon" sizes="32x32" href="https://twerking.lol/files/icon-32x32.png" type="image/png">
-        <link rel="icon" sizes="16x16" href="https://twerking.lol/files/icon-16x16.png" type="image/png">
-        <meta charset="UTF-8">
+        <meta property="og:type" content="website"> <!-- defining what type of embed it is.-->
+        <meta property="og:site_name" content="twerking.lol"> <!-- site name for embed-->
+        <meta property="og:url" content="https://twerking.lol/"> <!-- embed url for title-->
+        <meta property="og:title" content="twerking.lol"> <!-- embed title -->
+        <meta property="og:description" content="owned by 1bop"> <!-- embed description -->
+        <meta content="https://twerking.lol/files/image.png" property="og:image"> <!-- embed image -->
+        <link rel="shortcut icon" href="https://twerking.lol/files/icon.ico" type="image/x-icon"> <!-- site icon -->
+        <link rel="icon" href="https://twerking.lol/files/icon.ico" type="image/x-icon"> <!-- site icon x2-->
+        <link rel="icon" sizes="32x32" href="https://twerking.lol/files/icon-32x32.png" type="image/png"> <!-- site icon x3 -->
+        <link rel="icon" sizes="16x16" href="https://twerking.lol/files/icon-16x16.png" type="image/png"> <!-- site icon x4 -->
+        <meta charset="UTF-8"> <!-- character set (DONT CHANGE)-->
         <link rel="stylesheet" href="https://twerking.lol/tailwind.min.css">
         <link rel="stylesheet" href="https://twerking.lol/all.min.css">
         <link rel="stylesheet" href="https://twerking.lol/main.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
-        <title>twerking.lol</title>
+        <title>twerking.lol</title> <!-- The title that will display if you fuck up the title scroll (change if you are skidding me) -->
     </head>
     <body>
 		<div class="notification-box flex flex-col items-center justify-center fixed w-full z-50 p-3"></div>
 		
 		<div class="overlay">
 			<h1> </h1>
-			<p>[ $ ]</p>
+			<p>[ $ ]</p> <!-- the overlay text -->
 		</div>
 	
 		<div class="background"> <!-- background for the video to be on -->
@@ -59,14 +59,14 @@
 		<script src="https://twerking.lol/jquery.min.js"></script> <!-- jquery... -->
 		<script src="https://twerking.lol/ie.js"></script> <!-- basic, easy to bypass anti devtools (you can change this however you want, if you wanted to) -->
 		<script src="https://twerking.lol/features.js"></script> <!-- neccesairy features (change if you are skidding me) -->
-		<script>
+		<script> // the scrolling title I was talking about.
 			var titles = ["twerking.lol", "extra private biolink", "smoking ur deads.", "who coded me again?", "/u better", "/ua better", "/uam better", " ឵឵឵", "/uam better", " ឵឵឵", "t", "tw", "twe", "twer", "twerk", "twerki", "twerkin", "twerking", "twerking.", "twerking.l", "twerking.lo", "twerking.lol", " ឵឵឵", "twerking.lol", " ឵឵឵"];
-			var currentTitleIndex = 0;
-			function changeTitle() {
+			var currentTitleIndex = 0; // the title it will start on
+			function changeTitle() { // basic function to scroll through the title
 				document.title = titles[currentTitleIndex];
 				currentTitleIndex = (currentTitleIndex + 1) % titles.length;
 			}
-			setInterval(changeTitle, 275);
+			setInterval(changeTitle, 275); // how fast it will change in ms, I suggest fucking around with this on seperate browsers to see what it will look like, this is a pretty alright time I wouldn't fuck with it.
 		</script>
 	</body>
 </html>
