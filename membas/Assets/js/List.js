@@ -37,4 +37,4 @@ function Scroll(text) {
     }, 150);
 }
 
-Scroll(" nigger.xyz |")
+Scroll(" twerking.lol |")
